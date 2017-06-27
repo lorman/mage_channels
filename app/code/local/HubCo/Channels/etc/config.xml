@@ -112,36 +112,6 @@
 
 		</routers>
 	</admin>
-<!--
-	<adminhtml>
-		<layout>
-			<updates>
-				<hubco_scorpion>
-					<file>hubco_scorpion.xml</file>
-				</hubco_scorpion>
-			</updates>
-		</layout>
-		<acl>
-			<resources>
-				<admin>
-					<children>
-						<system>
-							<children>
-								<config>
-									<children>
-										<scorpion_options>
-											<title>Scorpion Config Options</title>
-										</scorpion_options>
-									</children>
-								</config>
-							</children>
-						</system>
-					</children>
-				</admin>
-			</resources>
-		</acl>
-	</adminhtml>
-	 -->
 	<crontab>
     <jobs>
     <!--
