@@ -64,10 +64,16 @@ class HubCo_Channels_Block_Adminhtml_Channel_Grid
             'index' => 'ship_threshold',
         ));
 
-        $this->addColumn('chan_attr', array(
-            'header' => $this->_getHelper()->__('Channel Attribute'),
+        $this->addColumn('chan_attr_price', array(
+            'header' => $this->_getHelper()->__('Channel Price Attribute'),
             'type' => 'text',
-            'index' => 'chan_attr',
+            'index' => 'chan_attr_price',
+        ));
+
+        $this->addColumn('chan_attr_allowed', array(
+            'header' => $this->_getHelper()->__('Channel Allowed Attribute'),
+            'type' => 'text',
+            'index' => 'chan_attr_allowed',
         ));
         return parent::_prepareColumns();
     }

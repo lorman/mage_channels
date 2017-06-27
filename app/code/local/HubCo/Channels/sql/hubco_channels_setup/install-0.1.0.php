@@ -43,7 +43,10 @@ $table->addColumn ( 'margin', Varien_Db_Ddl_Table::TYPE_INTEGER, 4, array (
 $table->addColumn ( 'ship_threshold', Varien_Db_Ddl_Table::TYPE_INTEGER, 4, array (
     'nullable' => false
 ) );
-$table->addColumn ( 'chan_attr', Varien_Db_Ddl_Table::TYPE_VARCHAR, 64, array (
+$table->addColumn ( 'chan_attr_price', Varien_Db_Ddl_Table::TYPE_VARCHAR, 64, array (
+    'nullable' => false
+) );
+$table->addColumn ( 'chan_attr_allowed', Varien_Db_Ddl_Table::TYPE_VARCHAR, 64, array (
     'nullable' => false
 ) );
 

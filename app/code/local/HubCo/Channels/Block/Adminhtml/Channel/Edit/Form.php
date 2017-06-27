@@ -82,11 +82,21 @@ extends Mage_Adminhtml_Block_Widget_Form
       );
 
       $fieldset->addField(
-          'chan_attr',
+          'chan_attr_price',
           'text',
           array(
-              'label' => Mage::helper('hubco_channels')->__('Channel Attribute'),
-              'name'  => 'chan_attr',
+              'label' => Mage::helper('hubco_channels')->__('Channel Price Attribute'),
+              'name'  => 'chan_attr_price',
+
+         )
+      );
+
+      $fieldset->addField(
+          'chan_attr_allowed',
+          'text',
+          array(
+              'label' => Mage::helper('hubco_channels')->__('Channel Allowed Attribute'),
+              'name'  => 'chan_attr_allowed',
 
          )
       );

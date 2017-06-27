@@ -6,7 +6,7 @@
 			<children>
 				<!-- First, create a top-level menu item, which will appear alongside
 					CMS -->
-				<hubco_channels translate="title" module="hubco_brand">
+				<hubco_channels translate="title" module="hubco_channels">
 					<title>Channels</title>
 					<sort_order>2</sort_order>
 
@@ -23,11 +23,11 @@
 		<resources>
 			<admin>
 				<children>
-					<hubco_channels translate="title" module="hubco_brand">
+					<hubco_channels translate="title" module="hubco_channels">
 						<title>Channels</title>
 						<sort_order>2</sort_order>
 						<children>
-							<channels translate="title" module="hubco_brand">
+							<channels translate="title" module="hubco_channels">
 								<title>Manage Channels</title>
 							</channels>
 						</children>
