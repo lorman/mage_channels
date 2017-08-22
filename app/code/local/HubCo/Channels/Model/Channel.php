@@ -24,6 +24,7 @@ class HubCo_Channels_Model_Channel
       $allChannelsCollection = Mage::getModel('hubco_channels/channel')
       ->getCollection();
       $allChannels = $allChannelsCollection->load()->toArray();
+      $allChannels['items'][] = array('name'=>'NONE','channel_id' => -1);
       foreach ($allChannels['items'] as $channel)
       {
         if (!isset($channel['name'])) {
