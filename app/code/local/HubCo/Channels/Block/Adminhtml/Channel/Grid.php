@@ -75,6 +75,12 @@ class HubCo_Channels_Block_Adminhtml_Channel_Grid
             'type' => 'text',
             'index' => 'chan_attr_allowed',
         ));
+
+        $this->addColumn('store_view', array(
+            'header' => $this->_getHelper()->__('Store Views'),
+            'type' => 'text',
+            'index' => 'store_view',
+        ));
         return parent::_prepareColumns();
     }
 

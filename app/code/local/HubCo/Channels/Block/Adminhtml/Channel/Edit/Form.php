@@ -100,6 +100,16 @@ extends Mage_Adminhtml_Block_Widget_Form
 
          )
       );
+
+      $fieldset->addField(
+          'store_view',
+          'text',
+          array(
+              'label' => Mage::helper('hubco_channels')->__('Store Views'),
+              'name'  => 'store_view',
+
+         )
+      );
       $formValues = Mage::registry('current_channel')->getDefaultValues();
       if (!is_array($formValues)) {
          $formValues = array();

@@ -9,7 +9,7 @@
 				database table 'core_resource' against this value. If the database is lower,
 				it will attempt to run any setup scripts for the module and then update the
 				database table to match this value. -->
-			<version>0.1.0</version>
+			<version>0.2.0</version>
 		</HubCo_Channels>
 	</modules>
 	<global>
