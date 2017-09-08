@@ -45,4 +45,14 @@ class HubCo_Channels_Model_Channel
 
       return $channels;
     }
+
+    public function getByStoreViewCode($code) {
+      $channelCollection = Mage::getModel('hubco_channels/channel')->getCollection();
+      $channelCollection->addFieldToFilter(
+          'store_view',$code);
+      //echo $channelCollection->getSelect()->__toString();
+      $channels = $channelCollection->getData();
+      return $channels;
+
+    }
 }
